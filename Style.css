@@ -1,0 +1,139 @@
+body {
+     font-family: Arial, sans-serif; 
+    margin: 0;
+    background-color: #96b238;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #624545;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .title {
+    text-align: center;
+    margin-top: 0;
+    color: #130707;
+  }
+
+  form {
+    margin-bottom: 20px;
+  }
+
+  input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 7%;
+    border: 1px solid #ccc;
+
+  }
+
+  textarea .taskInput {
+    width: 90%;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid #afa6a6;
+    resize: vertical;  
+    min-height: 50px;  
+  }
+  textarea {
+    width: 90%;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #a9a2a2;
+    resize: vertical;  
+    min-height: 100px;  
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .task-section {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .section-heading {
+    margin-top: 0;
+    color: #333;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 5px;
+    padding: 8px;
+    background-color: #b8b2b2;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  li.completed {
+    opacity: 0.6;
+  }
+
+  li span {
+    flex-basis: 100%;
+  }
+
+  li p {
+    flex-basis: 100%;
+    margin-top: 5px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  li button {
+    margin-left: auto;
+    padding: 5px 10px;
+    background-color: #ff5252;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  li .expand-button {
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: #757a75;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+
+  li .expand-icon {
+    margin-right: 5px;
+    transform: rotate(-90deg);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  li.expanded .expand-icon {
+    transform: rotate(0);
+  }
